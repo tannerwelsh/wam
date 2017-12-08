@@ -4,7 +4,11 @@
   "description": "Weights and measures conversion utilities for JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src --out-dir lib",
+    "build:watch": "babel --watch src --out-dir lib",
+    "lint": "eslint src test",
+    "test": "mocha --require babel-register",
+    "test:watch": "mocha --require babel-register --watch"
   },
   "keywords": [
     "standards",
@@ -16,5 +20,19 @@
     "standard"
   ],
   "author": "Tanner Welsh <tannerwelsh@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "eslint": "^4.12.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^4.0.1"
+  }
 }
