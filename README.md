@@ -51,9 +51,9 @@ inLiters('8.432 pints')
 | `feet`        | `ft`, `'`     |
 | `yards`       | `yd`          |
 | `miles`       | `mi`          |
+|               |               |
 | `millimeters` | `mm`          |
 | `centimeters` | `cm`          |
-|               |               |
 | `meters`      | `m`           |
 | `kilometers`  | `km`          |
 
